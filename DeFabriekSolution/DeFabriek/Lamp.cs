@@ -33,7 +33,8 @@ namespace Masevon
         }
 
         // Gedrag leg je vast in Methods
-        public void Aan()
+        // Virtual maakt het gedrag polymorf-ready
+        public virtual void Aan()
         {
             Console.BackgroundColor = Kleur;
             Console.WriteLine($"De lamp gaat aan met een intensiteit van {Intensiteit} lumen");
