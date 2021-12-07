@@ -10,14 +10,14 @@ namespace KoenAndMe
     {
         int keer = 42;
 
-        public void Instructies()
+        public int Instructies()
         {
             Console.WriteLine(keer);
             Console.WriteLine("1 Leffe");
             Console.WriteLine("1 Karamaliet");
             Console.WriteLine("1 Duvel");
             Console.WriteLine("1 Grimbergen");
-
+            return 42;
         }
     }
 }

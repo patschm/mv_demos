@@ -14,9 +14,10 @@ namespace KoenAndMe
             k.Execute(Explode);
         }
 
-        static void Explode()
+        static int Explode()
         {
             Console.WriteLine("Kaboooom!!!");
+            return 42;
         }
     }
 }
