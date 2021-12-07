@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeTorenVanBabel", "DeTorenVanBabel\DeTorenVanBabel.csproj", "{6F18FC01-1217-4100-B283-432D6AAAD346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCompany", "TheCompany\TheCompany.csproj", "{3F7B099A-907D-4D2F-A394-520BA85A3D08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F18FC01-1217-4100-B283-432D6AAAD346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F18FC01-1217-4100-B283-432D6AAAD346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F18FC01-1217-4100-B283-432D6AAAD346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F18FC01-1217-4100-B283-432D6AAAD346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7B099A-907D-4D2F-A394-520BA85A3D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7B099A-907D-4D2F-A394-520BA85A3D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7B099A-907D-4D2F-A394-520BA85A3D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7B099A-907D-4D2F-A394-520BA85A3D08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE74FA13-EB33-4E11-A65E-0FB0B2C1C2C5}
+	EndGlobalSection
+EndGlobal
