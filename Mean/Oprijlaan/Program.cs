@@ -15,6 +15,9 @@ namespace Oprijlaan
             Valkuil kuil = new Valkuil();
             Philips.Lamp lamp = new Philips.Lamp();
 
+            lus.Connect(hek);
+            lus.Connect(kuil);
+            lus.Connect(lamp);
 
             lus.Detecteer();
 
