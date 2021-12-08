@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +16,7 @@ namespace RekenMachine
         public Form1()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,11 +27,16 @@ namespace RekenMachine
             int a = int.Parse(sA);
             int b = int.Parse(sB);
 
-            int result = LongAdd(a, b);
-            UpdateLabel(result);
-        }
+            var ctx = SynchronizationContext.Current;
+            //int result = LongAdd(a, b);
+            //UpdateLabel(result);
 
-        private void UpdateLabel(int result)
+            Task.Run(() => LongAdd(a, b))
+                .ContinueWith(pt => ctx.Post(UpdateLabel, pt.Result)
+                });
+        }   
+
+        private void UpdateLabel(object result)
         {
             lblAnswer.Text = result.ToString();
         }
