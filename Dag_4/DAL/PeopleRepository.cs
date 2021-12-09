@@ -11,6 +11,11 @@ namespace DAL
     {
         private List<Person> _people;
 
+        public List<Person> GetAll()
+        {
+            return _people;
+        }
+
         public PeopleRepository()
         {
             _people = new Faker<Person>()
