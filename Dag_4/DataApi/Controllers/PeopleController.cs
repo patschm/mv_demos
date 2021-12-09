@@ -25,6 +25,7 @@ namespace DataApi.Controllers
             return _people.GetAll();
         }
 
+        [HttpPost]
         public IActionResult Post([FromBody]Person p)
         {
             var pins = _people.Insert(p);
