@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var list = [];
+
+        var req = new XMLHttpRequest();
+        req.open("GET" "https://localhost:5001/api/people");
+
+        req.onreadystatechange = (state) => {
+            if (req.readyState == 4) {
+                list = JSON.parse(req.responseText);
+
+                for (var i = 0; i < list.length; i++) {
+                    var h2 = document.createElement("h2");
+                    h2.textContent = `${list[i].firstName}`
+                    document.body.appendChild(h2);
+                }
+            }
+        };
+        req.send();
+
+
+    </script>
+</body>
+</html>

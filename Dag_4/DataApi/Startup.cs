@@ -30,6 +30,7 @@ namespace DataApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
            // app.UseMyMiddleware();
             app.UseRouting();
 

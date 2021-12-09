@@ -29,7 +29,7 @@ namespace DataApi.Controllers
         public IActionResult Post([FromBody]Person p)
         {
             var pins = _people.Insert(p);
-            return Created($"api/people", p.Id);
+            return Created($"api/people/{p.Id}", p.Id);
         }
     }
 }

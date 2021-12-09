@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataApi", "DataApi\DataApi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B55A4BA5-F0FB-4B1B-BF4B-64C6AA73059F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{7BDAF872-61DB-4D34-9D22-268327A256BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemo", "WpfDemo\WpfDemo.csproj", "{BA1F9BE2-B672-4479-88CD-A2461C5BF922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B55A4BA5-F0FB-4B1B-BF4B-64C6AA73059F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B55A4BA5-F0FB-4B1B-BF4B-64C6AA73059F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B55A4BA5-F0FB-4B1B-BF4B-64C6AA73059F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDAF872-61DB-4D34-9D22-268327A256BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDAF872-61DB-4D34-9D22-268327A256BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDAF872-61DB-4D34-9D22-268327A256BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDAF872-61DB-4D34-9D22-268327A256BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA1F9BE2-B672-4479-88CD-A2461C5BF922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1F9BE2-B672-4479-88CD-A2461C5BF922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1F9BE2-B672-4479-88CD-A2461C5BF922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1F9BE2-B672-4479-88CD-A2461C5BF922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
