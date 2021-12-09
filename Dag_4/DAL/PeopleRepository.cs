@@ -15,7 +15,12 @@ namespace DAL
         {
             return _people;
         }
-
+        public Person Insert(Person p)
+        {
+            _people.Add(p);
+            p.Id = _people.Max(p => p.Id) + 1;
+            return p;
+        }
         public PeopleRepository()
         {
             _people = new Faker<Person>()

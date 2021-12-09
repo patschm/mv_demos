@@ -20,7 +20,7 @@ namespace DataApi
             //services.AddScoped<Teller>();
             services.AddControllers();
 
-            services.AddTransient<PeopleRepository>();
+            services.AddSingleton<PeopleRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
