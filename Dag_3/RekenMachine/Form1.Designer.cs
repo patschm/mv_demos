@@ -35,6 +35,7 @@ namespace RekenMachine
             this.txtB = new System.Windows.Forms.TextBox();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // label1
@@ -124,6 +125,7 @@ namespace RekenMachine
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
