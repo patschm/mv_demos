@@ -1,3 +1,4 @@
+using DAL;
 using DataApi.Middleware;
 using DataApi.Services;
 using Microsoft.AspNetCore.Builder;
@@ -18,6 +19,8 @@ namespace DataApi
         {
             //services.AddScoped<Teller>();
             services.AddControllers();
+
+            services.AddTransient<PeopleRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

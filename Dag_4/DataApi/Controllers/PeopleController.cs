@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DAL;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,17 @@ namespace DataApi.Controllers
     [ApiController]
     public class PeopleController : ControllerBase
     {
-        [HttpGet]
-        public List<string> Get()
+        private PeopleRepository _people;
+
+        public PeopleController(PeopleRepository people)
         {
-            return new List<string> { "Hallo", "allemaal" };
+            _people = people;
+        }
+
+        [HttpGet]
+        public List<Person> Get()
+        {
+            return _people.GetAll();
         }
     }
 }
