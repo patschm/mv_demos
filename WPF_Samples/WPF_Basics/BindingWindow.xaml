@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF_Basics.BindingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Basics" 
+        xmlns:viewmodels="clr-namespace:WPF_Basics.ViewModels" 
+        d:DataContext="{d:DesignInstance Type=viewmodels:BindingViewModel}"
+        mc:Ignorable="d"
+        Title="BindingWindow" Height="450" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView ItemsSource="{Binding Path=People}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Background="{Binding BackColor}">
+                        <TextBlock Margin="5,0,0,0" Text="{Binding FirstName}"></TextBlock>
+                        <TextBlock Margin="5,0,0,0" Text="{Binding LastName}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Grid.Row="1" HorizontalAlignment="Center">
+            <Button Width="70" Command="{Binding Previous}">Previous</Button>
+            <TextBlock Width="50" Text="{Binding CurrentPage}" TextAlignment="Center"></TextBlock>
+            <Button Width="70" Command="{Binding Next}">Next</Button>
+        </StackPanel>
+    </Grid>
+</Window>
